@@ -1,6 +1,12 @@
 # cvproject
 Enhancing Thoracic Abnormality Detection by Balancing Local and Global Feature Extraction
 
+Files:
+1. data.py - contains code on the extraction of data (from kaggle using HuggingFace) and all the preprocessing of the data for it to be ready for training.
+2. cnn_pipeline.py - code creating the convolutional neural network, training, validation
+3. vit_pipeline.py - code creating the vision transformer, training, validation
+4. grad-cam.py - code for displaying the grad-cam for the images (visual heatmaps highlighting the important regions in an image that drive a deep learning model's prediction)
+
 Recent advances in computer vision have allowed for the creation of systems that can detect disease patterns from various scans, improving the field of radiology. One area where this is increasingly important is imaging of the thoracic cavity, an area of the chest enclosed by the ribcage. The thoracic cavity, which houses vital organs such as the heart and lungs, is often imaged via chest X-rays and Spiral CT scans to diagnose various abnormalities that can point to systemic diseases like Chronic Obstructive Pulmonary Disease (COPD).
 
 Radiologists currently diagnose thoracic abnormalities through manual interpretation of chest X-rays and Spiral CTs. Although radiologist expertise is important in reading such scans, the increasing volume of medical imaging, as well as noise that can be found in the imaging, contributes to variability in diagnosis. Studies have reported that the retrospective error rate for radiologists is as high as 30%, underscoring the need for diagnostic tools with high accuracy and limited variability. Several factors contribute to this high error rate, including fatigue due to increasing imaging workloads, the subtlety of some findings, and image noise. The growing volume of medical imaging data continues to outpace radiologist availability, which highly strains diagnostic capacity, increasing the risk of missed or inconsistent findings. These challenges highlight a critical need for tools that can assist radiologists in identifying thoracic abnormalities, with efficiency, consistency, and objectivity.
